@@ -10,8 +10,8 @@ public class Main {
         System.out.print("Number of Friends: ");
         numofFriends = scanner.nextInt();
 
-        if (numofFriends <= 1) {
-            System.out.println("Input values above 1");
+        if (numofFriends < 1) {
+            System.out.println("Invalid Amount of People!");
             System.exit(0);
         }
 
@@ -72,3 +72,4 @@ public class Main {
 
     }
 }
+
