@@ -73,7 +73,7 @@ public class Main {
             System.out.println("Discount: None");
         }
         System.out.println("Final Total: " + finalTotal);
-        System.out.println("Amount per friend: ₱" + perHead);
+        System.out.println("Amount per friend: ₱%.2f%n" + perHead);
 
     }
 }
