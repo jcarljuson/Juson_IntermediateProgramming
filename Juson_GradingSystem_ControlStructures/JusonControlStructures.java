@@ -1,4 +1,4 @@
-2import java.util.Scanner;
+import java.util.Scanner;
 
 public class JusonControlStructures {
 
@@ -110,4 +110,5 @@ public class JusonControlStructures {
         System.out.println("\nLast Grade: " + lastGrade);
         System.out.println("Remarks: " + lastRemarks);
     }
+
 }
