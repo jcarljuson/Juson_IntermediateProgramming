@@ -5,13 +5,6 @@ public class Main {
             {4, 5, 6},
             {7, 8, 9}
         };
-
-        // Displaying the Original Values
-        System.out.println("Original Matrix:");
-        for (int[] row : matrix) {
-            for (int val : row) System.out.print(val + " ");
-            System.out.println();
-        }
         
         // Get the size of the matrix
         int rows = matrix.length;
@@ -27,7 +20,14 @@ public class Main {
             }
         }
 
-        // Displaying the Transposed Values
+        // Original Values
+        System.out.println("Original Matrix:");
+        for (int[] row : matrix) {
+            for (int val : row) System.out.print(val + " ");
+            System.out.println();
+        }
+
+        // Transposed Values
         System.out.println("\nTransposed Matrix:"); 
         for (int[] row : transpose) {
             for (int val : row) System.out.print(val + " ");
@@ -35,4 +35,3 @@ public class Main {
         }
     }
 }
-
