@@ -6,7 +6,7 @@ public class Main {
             {7, 8, 9}
         };
 
-        // Original Values
+        // Displaying the Original Values
         System.out.println("Original Matrix:");
         for (int[] row : matrix) {
             for (int val : row) System.out.print(val + " ");
@@ -27,7 +27,7 @@ public class Main {
             }
         }
 
-        // Transposed Values
+        // Displaying the Transposed Values
         System.out.println("\nTransposed Matrix:"); 
         for (int[] row : transpose) {
             for (int val : row) System.out.print(val + " ");
@@ -35,3 +35,4 @@ public class Main {
         }
     }
 }
+
