@@ -1,26 +1,36 @@
-public class Main {
+public class MatrixTranspose {
     public static void main(String[] args) {
-
-        int[][] original = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
         };
 
+        // Original Values
         System.out.println("Original Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(original[i][j] + " ");
-            }
+        for (int[] row : matrix) {
+            for (int val : row) System.out.print(val + " ");
             System.out.println();
         }
+        
+        // Get the size of the matrix
+        int rows = matrix.length;
+        int cols = matrix[0].length;
 
-        System.out.println("\nTransposed Matrix:");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        // Creating a new matrix for the result
+        int[][] transpose = new int[cols][rows];
 
-                System.out.print(original[j][i] + " ");
+        // using nested loop to swap rows and columns
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                transpose[j][i] = matrix[i][j];
             }
+        }
+
+        // Transposed Values
+        System.out.println("\nTransposed Matrix:"); 
+        for (int[] row : transpose) {
+            for (int val : row) System.out.print(val + " ");
             System.out.println();
         }
     }
